@@ -1,0 +1,183 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.header__container{
+    background-color: #1a1a1a;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    height: 70px;
+}
+
+.logo__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
+
+.logo__container img{
+    width: 80%;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight:bold;
+    padding: 5px;
+}
+
+.delivery p{
+    font-size: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    overflow: hidden;
+    width: 100%;
+    flex: 1;
+}
+
+.search select,
+.search input{
+    padding: 10px;
+    font-weight: bold;
+    outline: 1px soild #fff;
+
+}
+
+.search select{
+    border: none;
+}
+.search input{
+    width: 100%;
+    border: none;
+    padding: 11px;
+}
+
+.search svg{
+    padding: 10.5px;
+    background: #febd69;
+    color: #1a1a1a;
+}
+
+.search svg:hover{
+    background-color: #d49644;
+}
+
+.search:focus-within{
+    border: 2px solid rgb(235, 161, 173)
+}
+.order__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 450px;
+}
+.order__container a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.order__container p {
+    font-size: 10px;
+}
+
+.language{
+    width: 100px;
+    display: flex;
+    padding: 10px;
+}
+
+.language select{
+    background-color: #1a1a1a;
+    border:none;
+    color: #fff;
+}
+.language img{
+    width: 30%;
+}
+
+.cart{
+    position: relative;
+}
+.cart svg{
+    height: 110%;
+}
+
+.cart span{
+    position: absolute;
+    font-weight: bold;
+    top: -2px;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    left: 6px;
+    color: orange;
+}
+
+.order__container a:hover,
+.delivery:hover,
+.logo__container a:hover,
+.logo__container ul li:hover {
+    border: 1px solid #fff;
+    border-radius:3px;
+}
+
+.lower__container{
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.lower__container ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.lower__container ul li{
+    padding: 8px;
+}
+
+.lower__container ul li:first-child{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.lower__container ul li:hover{
+    border: 1px solid #fff;
+    border-radius:3px;
+}
+
+
+@media screen  and (max-width: 576px) {
+    .header__container{
+        display: flex;
+        flex-direction: column !important;
+        height: auto;
+    }
+    .lower__container ul li:not(:first-child){
+        display: none;
+    }
+    .language{
+        display: none;
+    }
+}
+
+.fixed{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
